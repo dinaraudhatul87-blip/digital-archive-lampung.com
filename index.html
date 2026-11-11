@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Digital Archive Bahasa dan Aksara Lampung</title>
+<style>
+:root{--bg:#f7f1e6;--surf:#fffaf0;--ink:#2b1d14;--mute:#6b5646;--brand:#5a2e1a;--gold:#b8862b;--line:#e0d3bd;--nav:#2a1a12;--navink:#f3e6cf;--sai:#0f6b6b;--saib:#dcefee;--pep:#a8452b;--pepb:#f6e1d9;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1c130d;--surf:#271a12;--ink:#f1e5d0;--mute:#b9a58d;--brand:#e0b46a;--gold:#d9a441;--line:#40301f;--nav:#120b07;--sai:#5fc4c0;--saib:#16302f;--pep:#f08d6e;--pepb:#372019;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1c130d;--surf:#271a12;--ink:#f1e5d0;--mute:#b9a58d;--brand:#e0b46a;--gold:#d9a441;--line:#40301f;--nav:#120b07;--sai:#5fc4c0;--saib:#16302f;--pep:#f08d6e;--pepb:#372019;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:calc(70px + env(safe-area-inset-top,0px));height:100%}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 Georgia,"Iowan Old Style",serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--nav);z-index:10}
+h1,h2,h3{font-family:"Palatino Linotype",Palatino,Georgia,serif;line-height:1.15;margin:0 0 .5em;color:var(--brand)}
+h3{font-size:18px}a{color:var(--brand)}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--nav);padding:10px 16px;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+header b{color:var(--navink);font-size:15px;line-height:1.2;margin-right:auto}header b small{display:block;font-weight:400;opacity:.7;font-size:12px}
+nav{display:flex;gap:2px;overflow-x:auto;max-width:100%}
+nav a{color:var(--navink);text-decoration:none;font:14px system-ui,sans-serif;padding:6px 9px;border-radius:6px;white-space:nowrap}
+nav a:hover,nav a:focus-visible{background:#ffffff22;outline:none}
+.page:not(.on){display:none!important}.page.on{display:block;animation:fi .35s ease}.hero.page.on{display:flex}
+@keyframes fi{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.page.on{animation:none}}
+.wrap{max-width:1000px;margin:0 auto;padding:44px 18px 60px}
+.brand{color:var(--navink);text-decoration:none;margin-right:auto}
+nav a[aria-current]{background:#ffffff33;font-weight:700}
+.hero{position:relative;min-height:calc(100vh - 64px);display:flex;align-items:center;padding:48px 18px;background:linear-gradient(100deg,rgba(18,11,7,.92) 0%,rgba(18,11,7,.72) 55%,rgba(18,11,7,.45) 100%),url(images/batu1.jpg) center/cover no-repeat;color:#f3e6cf}
+.hero .in{max-width:1000px;margin:0 auto;width:100%;display:grid;grid-template-columns:1.15fr .85fr;gap:34px;align-items:center}
+.hero h1{color:#f3e6cf;font-size:clamp(34px,6vw,58px);margin-bottom:14px}
+.hero p{color:#e3d3b8}.hero .kick{font:600 13px system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#e0b46a;margin-bottom:10px}
+.hero .btn{background:#e0b46a;color:#1c130d}.hero .btn.o{background:none;color:#f3e6cf;border-color:#f3e6cf}
+.plate{border:6px solid #3a2a1e;border-radius:4px;overflow:hidden;box-shadow:0 14px 40px rgba(0,0,0,.55);background:#000}
+.plate img{display:block;width:100%}.plate small{display:block;background:#2a1a12;color:#e3d3b8;font:12px system-ui,sans-serif;padding:6px 10px}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:26px}
+.tile{background:rgba(255,250,240,.1);border:1px solid rgba(243,230,207,.3);border-radius:8px;padding:12px;text-decoration:none;color:#f3e6cf;font:13px/1.4 system-ui,sans-serif}
+.tile b{display:block;font:700 16px Georgia,serif;color:#e0b46a}.tile:hover,.tile:focus-visible{background:rgba(255,250,240,.2)}
+h2{font-size:30px}
+.btn{display:inline-block;background:var(--brand);color:var(--bg);padding:10px 20px;border-radius:6px;text-decoration:none;font:600 15px system-ui,sans-serif;margin-right:8px}
+.btn.o{background:none;color:var(--brand);border:1px solid var(--brand)}
+.card{background:var(--surf);border:1px solid var(--line);border-radius:8px;padding:16px}
+.card p,.card li{font:15px/1.55 system-ui,sans-serif;margin:0 0 6px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}.three{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.sai{background:var(--saib);border-left:5px solid var(--sai)}.sai h3{color:var(--sai)}
+.pep{background:var(--pepb);border-left:5px solid var(--pep)}.pep h3{color:var(--pep)}
+.tabs,.tog{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 14px}
+.tabs button,.tog button{font:600 14px system-ui,sans-serif;border:1px solid var(--brand);background:none;color:var(--brand);padding:7px 16px;border-radius:99px;cursor:pointer}
+.tabs button[aria-selected=true],.tog button[aria-pressed=true]{background:var(--brand);color:var(--bg)}
+button:focus-visible,input:focus-visible,a:focus-visible,.gi:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(84px,1fr));gap:10px}
+.cell{background:var(--bg);border:1px solid var(--line);border-radius:8px;text-align:center;padding:12px 4px;font:600 18px Georgia,serif;color:var(--brand)}
+.cell small{display:block;font:12px system-ui,sans-serif;color:var(--mute)}
+.note{font:14px/1.5 system-ui,sans-serif;color:var(--mute);border-left:3px solid var(--gold);padding:6px 12px;margin:14px 0}
+.warn{border-left-color:var(--pep)}
+input[type=search]{width:100%;padding:11px 14px;border:1px solid var(--line);border-radius:6px;background:var(--surf);color:var(--ink);font:16px system-ui,sans-serif;margin-bottom:12px}
+.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font:15px/1.5 system-ui,sans-serif;background:var(--surf);min-width:480px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--brand);color:var(--bg)}th[scope=row]{width:30%}
+.w{display:grid;grid-template-columns:100px 1fr 1fr;gap:10px;border:1px solid var(--line);background:var(--surf);border-radius:6px;padding:10px 12px;font:14px/1.5 system-ui,sans-serif;margin-bottom:8px}
+.w strong{font:700 16px Georgia,serif}.w .a{color:var(--sai)}.w .o{color:var(--pep)}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.gi{border:2px solid var(--line);border-radius:8px;background:var(--surf);padding:0;cursor:pointer;overflow:hidden;text-align:left;color:var(--ink)}
+.gi[aria-pressed=true]{border-color:var(--gold)}
+.gi img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+.gi span{display:block;font:13px/1.35 system-ui,sans-serif;padding:7px 9px}
+.det{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:16px;align-items:start}
+.det img{width:100%;border-radius:8px;border:1px solid var(--line)}
+.st{display:inline-block;font:700 12px system-ui,sans-serif;border-radius:4px;padding:2px 8px;background:var(--gold);color:#1c130d}
+ol.src{padding-left:20px;font:15px/1.6 system-ui,sans-serif}ol.src li{margin-bottom:8px}
+footer{padding:30px 18px;text-align:center;font:14px system-ui,sans-serif;color:var(--mute)}
+@media(max-width:760px){.hero .in,.tiles,.two,.three,.det{grid-template-columns:1fr}.gal{grid-template-columns:1fr 1fr}.w{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><a class="brand" href="#beranda"><b style="display:block">Digital Archive<small>Bahasa dan Aksara Lampung</small></b></a>
+<nav><a href="#beranda">Beranda</a><a href="#bahasa">Bahasa</a><a href="#kelompok">Pepadun &amp; Saibatin</a><a href="#aksara">Aksara</a><a href="#galeri">Galeri</a><a href="#glosarium">Glosarium</a><a href="#naskah">Naskah</a><a href="#sumber">Sumber</a></nav></header>
+<main id="pages">
+
+<section id="beranda" class="page hero on">
+<div class="in">
+<div><div class="kick">Museum Negeri Lampung “Ruwa Jurai”</div>
+<h1>Digital Archive Bahasa dan Aksara Lampung</h1>
+<p>Arsip digital yang menggabungkan hasil observasi museum dengan sumber pustaka, lengkap dengan perbandingan bahasa dan aksara masyarakat Saibatin dan Pepadun. Setiap informasi memiliki sumber dan status verifikasi.</p>
+<a class="btn" href="#kelompok">Bandingkan dialek</a><a class="btn o" href="#galeri">Lihat galeri</a>
+<div class="tiles"><a class="tile" href="#bahasa"><b>Bahasa</b>Dialek A dan O</a><a class="tile" href="#aksara"><b>Aksara</b>Alfabet, angka, tanda bunyi</a><a class="tile" href="#galeri"><b>Galeri</b>Foto dan metadata</a><a class="tile" href="#sumber"><b>Sumber</b>Jurnal dan dokumen</a></div></div>
+<figure class="plate" style="margin:0"><img src="images/display.jpg" alt="Display Alfabet dan Angka Lampung di Museum Lampung"><small>Display Alfabet dan Angka Lampung, Museum Lampung. Latar: batu bertulisan di vitrin museum.</small></figure>
+</div>
+</section>
+
+<section id="bahasa" class="page wrap">
+<h2>Mengenal Bahasa Lampung</h2>
+<div class="two"><div>
+<p>Bahasa Lampung adalah bahasa daerah masyarakat Lampung. Penelitian Putri (2018) menunjukkan penggunaannya di Kota Bandar Lampung mulai memudar, berkaitan dengan faktor sosial dan pola pemakaian bahasa.</p>
+<p>Bahasa Lampung memiliki dua dialek utama: <strong>dialek A (api)</strong> dan <strong>dialek O (nyow)</strong>. Pelestarian tidak cukup menjaga simbol aksara; dokumentasi yang bisa dipelajari dan dipakai kembali juga diperlukan.</p></div>
+<div class="card"><h3>Rujukan di display museum</h3><p><i>Kamus Umum Bahasa Lampung-Indonesia</i> (Cunila 1979), diterbitkan di Teluk Betung, Desember 1985.</p></div></div>
+</section>
+
+<section id="kelompok" class="page wrap">
+<h2>Pepadun dan Saibatin</h2>
+<p>Dua kelompok adat Lampung dengan dialek, wilayah, dan tata adat yang berbeda.</p>
+<div class="two">
+<div class="card sai"><h3>Saibatin (pesisir)</h3><p><b>Dialek:</b> A (api)</p><p><b>Wilayah:</b> Melinting, Teluk Semangka, Belalau/Krui, Ranau, Kayu Agung, Cikoneng (Banten)</p><p><b>Adat:</b> kepemimpinan berdasarkan keturunan. Siger pengantin tujuh lekuk.</p></div>
+<div class="card pep"><h3>Pepadun (pedalaman)</h3><p><b>Dialek:</b> O (nyow)</p><p><b>Wilayah:</b> Abung, Tulang Bawang, Way Kanan/Sungkai, Pubian</p><p><b>Adat:</b> kedudukan diraih lewat upacara adat. Siger pengantin sembilan lekuk.</p></div></div>
+<div class="note">Dialek tidak selalu sejajar dengan adat. Sebagian kelompok Pepadun, misalnya di Lampung Timur, berdialek A, sedangkan di Menggala berdialek O. Jangan menyimpulkan adat seseorang dari dialeknya saja.</div>
+<h3 style="margin-top:22px">Bandingkan kosakata</h3>
+<div class="tog" role="group" aria-label="Tampilan"><button type="button" data-d="both" aria-pressed="true">Berdampingan</button><button type="button" data-d="a" aria-pressed="false">Saibatin (A)</button><button type="button" data-d="o" aria-pressed="false">Pepadun (O)</button></div>
+<input type="search" id="wq" value="ka" placeholder="Ketik awalan kata, mis. kab" aria-label="Cari kata">
+<div id="wres"></div>
+<p class="note">Sumber: tangkapan layar aplikasi kamus pada Azima &amp; Laila (2020), <i>Teknika</i> 14(1). Aplikasi aslinya memuat lebih dari 20.000 kosakata; di sini baru enam kata. Status: <span class="st">Terverifikasi ke sumber jurnal</span></p>
+<h3>Aksara</h3>
+<p>Aplikasi kamus pada jurnal tersebut mengajarkan satu perangkat induk huruf dan anak huruf untuk kedua dialek, sehingga perbedaan yang tercatat ada pada <strong>kosakata dan lafal</strong>. Cuplikan dokumen Unicode (Pandey, 2022) menyebut <i>Had Lampung Gunta</i> sebagai aksara gabungan had Pepadun dan Saibatin. <span class="st">Belum terverifikasi</span></p>
+</section>
+
+<section id="aksara" class="page wrap">
+<h2>Mengenal Aksara Lampung</h2>
+<p>Aksara Lampung juga dikenal sebagai Had Lampung, Sukhat Lampung, Surat Lampung, atau Ka-Ga-Nga.</p>
+<div class="tabs" role="tablist" id="tabs"><button role="tab" aria-selected="true" data-t="alfabet">Alfabet</button><button role="tab" aria-selected="false" data-t="angka">Angka</button><button role="tab" aria-selected="false" data-t="bunyi">Tanda bunyi</button></div>
+<div class="card"><div id="tabimg"></div><div id="tabbody" class="grid"></div><p class="note" id="tabnote"></p></div>
+<p class="note">Nama huruf mengikuti display museum. Bentuk huruf asli dapat dilihat pada foto display di Beranda dan Galeri.</p>
+</section>
+
+<section id="galeri" class="page wrap">
+<h2>Galeri Museum</h2>
+<p>Pilih foto untuk melihat metadatanya.</p>
+<div class="gal" id="gal"></div>
+<div class="det" id="det"></div>
+<p class="note warn">Izin publikasi foto belum dipastikan dengan pihak museum. Jangan membagikan halaman ini secara publik sebelum izin diperoleh.</p>
+</section>
+
+<section id="glosarium" class="page wrap">
+<h2>Glosarium</h2>
+<input type="search" id="q" placeholder="Cari istilah…" aria-label="Cari istilah">
+<div class="scroll"><table><thead><tr><th>Istilah</th><th>Arti</th></tr></thead><tbody id="gl"></tbody></table></div>
+</section>
+
+<section id="naskah" class="page wrap">
+<h2>Naskah dan Dokumen</h2>
+<p>Pilih naskah untuk melihat ringkasan isi, keterangan koleksi, dan teksnya. Isi hanya memuat yang tercantum pada sumber resmi dan pemberitaan yang dapat ditelusuri.</p>
+<div class="tabs" id="ntabs" role="tablist"></div>
+<div class="card" id="nbody"></div>
+<div class="note warn">Teks asli (aksara) dan transliterasi lengkap ketiga naskah di atas tidak tersedia pada sumber publik yang dibaca. Bagian “Teks naskah” sengaja dikosongkan sampai tim memperoleh akses ke naskah atau katalog museum, supaya tidak ada isi yang dikarang.</div>
+<h3 style="margin-top:22px">Dokumen pendukung</h3>
+<div class="card"><p><b>Proposal Unicode.</b> Pandey (2022), <i>Revised Proposal to Encode the Lampung Script in Unicode</i>. unicode.org/L2/L2022/22044-lampung.pdf</p></div>
+</section>
+
+<section id="sumber" class="page wrap">
+<h2>Sumber</h2>
+<ol class="src">
+<li>Azima, M. F., &amp; Laila, S. N. (2020). Rancang Bangun Aplikasi Kamus Bahasa dan Aksara Lampung Dialek A dan Dialek O Berbasis Android. <i>Teknika</i>, 14(1), 21–29.</li>
+<li>Putri, N. W. (2018). Pergeseran Bahasa Daerah Lampung pada Masyarakat Kota Bandar Lampung. <i>Jurnal Penelitian Humaniora</i>, 19(2), DOI 10.23917/humaniora.v19i2.6810. (Jurnal Teknika mengutipnya sebagai terbitan <i>PRASASTI</i>; perlu dicek.)</li>
+<li>Pandey, A. (2022). <i>Revised Proposal to Encode the Lampung Script in Unicode</i>. Unicode Consortium.</li>
+<li>Indrawansyah, H., Caturiani, S., &amp; Karmilasari, V. (2023). Evaluasi Program Pelestarian Budaya Lampung: Bahasa dan Aksara. <i>Administrativa</i>, 5(1), 33–41.</li>
+<li>Agustina, A., &amp; Aprilia, T. M. (2025). Fungsi Aksara Lampung Digital untuk Media Pembelajaran dalam Kurikulum Merdeka. <i>Jurnal Kepemimpinan dan Pengurusan Sekolah</i>, 10(4).</li>
+<li>Muhammad, M. A., &amp; Martinus. (2015). Font Aksara Lampung Berstandar Unicode. KNTIKK.</li>
+<li>Mulyanto, A., dkk. (2021). Penerapan CNN pada Pengenalan Aksara Lampung Berbasis OCR. <i>JEPIN</i>, 7(1).</li>
+<li>Museum Ruwa Jurai Pemprov Lampung. (2025). Naskah Kuno Aksara Lampung, Jejak Peradaban di Sai Bumi Ruwa Jurai.</li>
+<li>Perpustakaan dan Kearsipan Provinsi Lampung. (2026). Lampung Kembali Raih IKON 2026, Naskah Sahakhi Bulan Diakui sebagai Warisan Dokumenter Nasional.</li>
+<li>Kajian dialek dan adat: LOKABASA (UPI, 2015); <i>Social Pedagogy</i> (IAIN Metro, 2023); skripsi Universitas Diponegoro.</li>
+</ol>
+</section>
+</main>
+<footer>Project “Lampung Cultural Knowledge Preservation” · Kelompok 5, D3 Perpustakaan, FISIP Universitas Lampung · 2026</footer>
+<script>
+var IMG={d:"images/display.jpg",b1:"images/batu1.jpg",b2:"images/batu2.jpg",b3:"images/batu3.jpg",alf:"images/alfabet.jpg",ang:"images/angka.jpg"};
+function $(i){return document.getElementById(i)}
+/* kosakata */
+var W=[["kabar","beghita, kabagh","beghito, kabar"],["kabel","kabol","kabel"],["kabul","capai, kabul","kabul, tigeh ago"],["kabung","sedih, susah, putok","putuk"],["kabur","kabogh, samagh","gedubes, tuyun"],["kabut","asok, himbun","(tidak terbaca)"]];
+var d="both",wq=$("wq");
+function drawW(){var t=wq.value.trim().toLowerCase(),h="";
+W.forEach(function(w){if(t&&w[0].indexOf(t)!==0)return;
+h+='<div class="w"><strong>'+w[0]+'</strong>'+(d!=="o"?'<span class="a"><b>Saibatin (A):</b> '+w[1]+'</span>':'<span></span>')+(d!=="a"?'<span class="o"><b>Pepadun (O):</b> '+w[2]+'</span>':'<span></span>')+'</div>'});
+$("wres").innerHTML=h||'<p class="note">Tidak ada hasil. Coba awalan “ka”.</p>'}
+wq.oninput=drawW;
+document.querySelectorAll(".tog button").forEach(function(b){b.onclick=function(){d=b.dataset.d;document.querySelectorAll(".tog button").forEach(function(x){x.setAttribute("aria-pressed",x===b)});drawW()}});drawW();
+/* aksara */
+var D={alfabet:{img:IMG.alf,alt:"Ilustrasi huruf aksara Lampung beserta nama hurufnya",cap:"Ilustrasi: cuplikan lampiran aksara Lampung yang dimuat dalam Pandey (2022). Cuplikan ini menampilkan 19 huruf; huruf ta tidak tampak di sini tetapi ada pada display museum. Hak penggunaan perlu dipastikan sebelum dipublikasikan.",n:"Nama huruf dasar sesuai display Museum Lampung; bentuk hurufnya ada pada ilustrasi di atas.",i:"ka ga nga pa ba ma ta da na ca ja nya ya a la ra sa wa ha gha".split(" ").map(function(x){return[x,""]})},
+angka:{alt:"Angka Lampung 0 sampai 9",n:"Angka Lampung 0 sampai 9 (dari dokumentasi proposal). Bentuk perlu dicocokkan dengan dokumen Unicode.",i:[],img:IMG.ang},
+bunyi:{n:"Menurut Pandey (2022). Belum terverifikasi: jurnal Teknika menulis tekelubang sebagai “(ang)”, dibaca Kang.",i:[["ulan","[i]"],["bitan","[u]"],["bitan","[o]"],["bitjek","[e]"],["tekelubang","[ng]"],["rejundang","[r]"],["datas","[n]"],["tekelungan","[w]"],["kekeniah","[h]"],["nengen","huruf mati"]]}};
+function show(k){$("tabbody").innerHTML=D[k].i.map(function(x){return'<div class="cell">'+x[0]+'<small>'+x[1]+'</small></div>'}).join("");
+$("tabimg").innerHTML=D[k].img?'<figure style="margin:0 0 14px"><img src="'+D[k].img+'" alt="'+D[k].alt+'" style="max-width:100%;background:#fff;border-radius:6px;display:block">'+(D[k].cap?'<figcaption class="note">'+D[k].cap+'</figcaption>':"")+'</figure>':"";
+$("tabnote").textContent=D[k].n;
+document.querySelectorAll("#tabs button").forEach(function(b){b.setAttribute("aria-selected",b.dataset.t===k)})}
+document.querySelectorAll("#tabs button").forEach(function(b){b.onclick=function(){show(b.dataset.t)}});show("alfabet");
+/* galeri */
+var G=[{img:IMG.d,t:"Display Alfabet dan Angka Lampung",f:"ALFABET_LAMPUNG_MUSEUM_001.JPG",ds:"Display Alfabet Lampung dan Angka Lampung dengan keterangan Kamus Umum Bahasa Lampung-Indonesia (Cunila 1979)",a:"Aksara Lampung (Had Lampung)",s:"Terbaca dari display"},
+{img:IMG.b1,t:"Batu bertulisan 1",f:"NASKAH_BATU_MUSEUM_001.JPG",ds:"Batu gelap dengan banyak baris tulisan pahatan dalam vitrin kaca",a:"Belum terverifikasi",s:"Belum terverifikasi"},
+{img:IMG.b2,t:"Batu bertulisan 2",f:"NASKAH_BATU_MUSEUM_002.JPG",ds:"Batu dengan beberapa baris tulisan pahatan padat",a:"Belum terverifikasi",s:"Belum terverifikasi"},
+{img:IMG.b3,t:"Batu bertulisan 3",f:"NASKAH_BATU_MUSEUM_003.JPG",ds:"Bongkahan batu memanjang pada dudukan kaca dengan tiga sampai empat baris tulisan",a:"Belum terverifikasi",s:"Belum terverifikasi"}];
+function pick(i){var g=G[i];
+document.querySelectorAll(".gi").forEach(function(b,j){b.setAttribute("aria-pressed",j===i)});
+var rows=[["Judul",g.t+(i?" [menunggu label museum]":"")],["Lokasi","Museum Negeri Lampung Ruwa Jurai, Bandar Lampung"],["Deskripsi",g.ds],["Format","JPG"],["Bahasa","Bahasa Lampung dan Bahasa Indonesia"],["Jenis aksara",g.a],["Sumber","Observasi Museum Lampung"],["Hak dan akses","Internal sampai izin publikasi dipastikan"],["Nama file",g.f],["Status verifikasi",'<span class="st">'+g.s+'</span>']];
+$("det").innerHTML='<img src="'+g.img+'" alt="'+g.t+'"><div class="scroll"><table><tbody>'+rows.map(function(r){return'<tr><th scope="row">'+r[0]+'</th><td>'+r[1]+'</td></tr>'}).join("")+'</tbody></table></div>'}
+$("gal").innerHTML=G.map(function(g,i){return'<button type="button" class="gi" aria-pressed="false" onclick="pick('+i+')"><img src="'+g.img+'" alt="'+g.t+'"><span>'+g.t+'</span></button>'}).join("");pick(0);
+/* glosarium */
+var L=[["Aksara","Sistem tulisan yang digunakan untuk menuliskan bahasa."],["Bahasa Lampung","Bahasa daerah yang digunakan oleh masyarakat Lampung."],["Dialek A (api)","Dialek bahasa Lampung yang umumnya dipakai masyarakat Saibatin."],["Dialek O (nyow)","Dialek bahasa Lampung yang umumnya dipakai masyarakat Pepadun."],["Had Lampung","Salah satu sebutan untuk aksara Lampung."],["Induk huruf","Huruf dasar aksara Lampung, mis. ka, ga, nga."],["Anak huruf","Tanda bunyi yang mengubah vokal atau menambah bunyi akhir pada induk huruf."],["Ka-Ga-Nga","Sebutan populer aksara Lampung, dari tiga huruf pertamanya."],["Kamus","Buku rujukan yang memuat kata beserta artinya."],["Metadata","Data yang menjelaskan identitas sebuah objek digital."],["Naskah","Tulisan tangan yang menjadi sumber sejarah dan pengetahuan."],["Pepadun","Kelompok adat Lampung pedalaman; kedudukan diraih lewat upacara adat."],["Saibatin","Kelompok adat Lampung pesisir; kepemimpinan berdasarkan keturunan."],["Siger","Mahkota pengantin Lampung; tujuh lekuk (Saibatin) dan sembilan lekuk (Pepadun)."],["Transliterasi","Pengalihan tulisan dari satu aksara ke aksara lain, mis. ke huruf Latin."]];
+var q=$("q");function rg(){var s=q.value.toLowerCase(),r=L.filter(function(g){return(g[0]+g[1]).toLowerCase().indexOf(s)>-1});
+$("gl").innerHTML=r.length?r.map(function(g){return"<tr><td><b>"+g[0]+"</b></td><td>"+g[1]+"</td></tr>"}).join(""):'<tr><td colspan="2">Tidak ada istilah yang cocok.</td></tr>'}
+q.oninput=rg;rg();
+/* naskah */
+var N=[
+{k:"ingok",t:"Ingok Perjanjian Kita",
+ meta:[["Jenis","Naskah kulit kayu"],["Koleksi","UPTD Museum Negeri Provinsi Lampung “Ruwa Jurai”"],["Pengakuan","Ingatan Kolektif Nasional (IKON) 2025, ditetapkan Perpusnas RI"],["Pengusul","Dinas Perpustakaan dan Kearsipan Provinsi Lampung bersama UPTD Museum Ruwa Jurai"],["Aksara dan bahasa","Belum terkonfirmasi dari sumber yang dibaca"],["Status verifikasi","Ringkasan: bersumber dari pemberitaan; teks: belum tersedia"]],
+ ring:["Menurut pemberitaan, naskah ini memuat perjanjian sakral antara manusia, roh penjaga hutan, dan alam.","Disebutkan pula adanya ritual pemotongan kerbau putih bertanduk hitam di dalam perjanjian tersebut.","Pesan yang terbaca dari isinya bersifat ekologis dan spiritual, memperlihatkan eratnya hubungan masyarakat dengan lingkungan, dan oleh pejabat dinas disebut sebagai cerminan masa peralihan kepercayaan.","Sumber: Lampost.co dan Berdikari.co (Oktober 2025); rilis Museum Ruwa Jurai (23 Oktober 2025)."],teks:[]},
+{k:"sahakhi",t:"Sahakhi Bulan",
+ meta:[["Koleksi","Museum Lampung"],["Pengakuan","IKON 2026, menurut Perpustakaan dan Kearsipan Provinsi Lampung"],["Aksara dan bahasa","Belum terkonfirmasi"],["Status verifikasi","Belum terverifikasi"]],
+ ring:["Isi naskah ini belum ditemukan pada sumber yang dapat dibaca; yang tercantum baru judul rilis resmi tentang pengakuan IKON 2026.","Ringkasan akan ditambahkan setelah rilis lengkap atau keterangan koleksi dari museum diperoleh."],teks:[]},
+{k:"umum",t:"Naskah kuno Lampung (umum)",
+ meta:[["Cakupan","Gambaran isi naskah kuno beraksara Lampung"],["Koleksi","Sebagian tersimpan di Museum Negeri Provinsi Lampung"],["Status verifikasi","Bersumber dari artikel museum dan ANTARA"]],
+ ring:["Naskah kuno yang ditemukan di wilayah Lampung memuat antara lain doa-doa Islam, ajaran moral, dan hukum adat yang menjadi pedoman hidup masyarakat (Museum Ruwa Jurai, 2025).","Menurut kurator museum yang dikutip ANTARA (2021), sekitar 84 naskah kuno milik masyarakat Lampung telah diarsipkan; sebagian ditulis dengan Had Lampung, sebagian dengan aksara Arab, Jawi, dan Pallawa.","Ada naskah yang ditulis dengan Had Lampung tetapi berbahasa campuran Lampung dan Melayu, menunjukkan percampuran budaya."],teks:[]}];
+var nk="ingok";
+function drawN(){var n=N.filter(function(x){return x.k===nk})[0];
+document.querySelectorAll("#ntabs button").forEach(function(b){b.setAttribute("aria-selected",b.dataset.k===nk)});
+var teks=n.teks.length?'<table><thead><tr><th>Baris</th><th>Transliterasi</th><th>Terjemahan</th><th>Status</th></tr></thead><tbody>'+n.teks.map(function(r,i){return"<tr><td>"+(i+1)+"</td><td>"+r[0]+"</td><td>"+r[1]+"</td><td>"+r[2]+"</td></tr>"}).join("")+"</tbody></table>":'<p class="note">Teks naskah (aksara asli, transliterasi, terjemahan) belum tersedia untuk naskah ini.</p>';
+$("nbody").innerHTML='<h3>'+n.t+'</h3><h4 style="margin:14px 0 6px;font:700 15px system-ui,sans-serif">Ringkasan isi</h4>'+n.ring.map(function(x){return"<p>"+x+"</p>"}).join("")+'<h4 style="margin:14px 0 6px;font:700 15px system-ui,sans-serif">Keterangan</h4><div class="scroll"><table><tbody>'+n.meta.map(function(r){return'<tr><th scope="row">'+r[0]+"</th><td>"+r[1]+"</td></tr>"}).join("")+'</tbody></table></div><h4 style="margin:14px 0 6px;font:700 15px system-ui,sans-serif">Teks naskah</h4><div class="scroll">'+teks+"</div>"}
+$("ntabs").innerHTML=N.map(function(x){return'<button role="tab" data-k="'+x.k+'">'+x.t+"</button>"}).join("");
+document.querySelectorAll("#ntabs button").forEach(function(b){b.onclick=function(){nk=b.dataset.k;drawN()}});drawN();
+/* navigasi halaman (menu), bukan scroll */
+var pages=document.querySelectorAll(".page"),navs=document.querySelectorAll("nav a");
+function route(){var id=(location.hash||"#beranda").slice(1);var el=document.getElementById(id);if(!el||!el.classList.contains("page"))id="beranda";
+pages.forEach(function(p){p.classList.toggle("on",p.id===id)});
+navs.forEach(function(a){if(a.getAttribute("href")==="#"+id)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current")});
+window.scrollTo(0,0)}
+window.addEventListener("hashchange",route);route();
+</script>
+</body>
+</html>
